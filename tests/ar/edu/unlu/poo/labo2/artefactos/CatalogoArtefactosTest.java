@@ -83,7 +83,7 @@ class CatalogoArtefactosTest {
     Artefacto masPoderoso = catalogo.obtenerArtefactoMasPoderoso();
     assertNotNull(masPoderoso);
     assertEquals("Varita de Sauco", masPoderoso.getNombre());
-    assertEquals(100, masPoderoso.getPoder());
+    assertEquals(100, masPoderoso.getNivelDePoder());
   }
 
   @Test

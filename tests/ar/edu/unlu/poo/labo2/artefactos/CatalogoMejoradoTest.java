@@ -1,7 +1,7 @@
 package ar.edu.unlu.poo.labo2.artefactos;
 
-import ar.edu.unlu.poo.labo2.artefactos.Artefacto;
-import ar.edu.unlu.poo.labo2.artefactos.CatalogoArtefactos;
+import ar.edu.unlu.poo.labo2.estrategias.AlquimistaExperto;
+import ar.edu.unlu.poo.labo2.estrategias.EscribaArcano;
 import ar.edu.unlu.poo.labo2.estrategias.EstrategiaDeMejora;
 import ar.edu.unlu.poo.labo2.estrategias.ForjadorDeRunas;
 import ar.edu.unlu.poo.labo2.estrategias.JoyeroElfico;
@@ -68,12 +68,12 @@ class CatalogoMejoradoTest {
     EstrategiaDeMejora estrategiaJoyería = new JoyeroElfico();
     CatalogoArtefactos catalogo = new CatalogoArtefactos(estrategiaJoyería);
     catalogo.agregarArtefacto(amuletoFuerte);
-    catalogo.agregarArtefacto(pergaminoInutil); // Se agrega para asegurar que no lo modifica.
+    catalogo.agregarArtefacto(pergaminoSimple); // Se agrega para asegurar que no lo modifica.
 
     catalogo.aplicarMejoras();
 
     assertEquals(100, amuletoFuerte.getNivelDePoder(), "El amuleto fuerte debería tener un 25% más de poder.");
-    assertEquals(10, pergaminoInutil.getNivelDePoder(), "El pergamino no debería haber sido modificado por el joyero.");
+    assertEquals(20, pergaminoSimple.getNivelDePoder(), "El pergamino no debería haber sido modificado por el joyero.");
   }
 
   @Test
