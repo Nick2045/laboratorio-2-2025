@@ -11,7 +11,7 @@ import java.util.Set;
 
 public class CatalogoArtefactos {
 
-    Set<Artefacto> artefactos;
+    Set<Artefacto> artefactos = new HashSet<>();
     private EstrategiaDeMejora estrategia;
 
     public CatalogoArtefactos(){
@@ -19,7 +19,6 @@ public class CatalogoArtefactos {
     }
 
     public CatalogoArtefactos(EstrategiaDeMejora estrategiaDeMejora) {
-        this.artefactos = new HashSet<>();
         this.estrategia = estrategiaDeMejora;
     }
 
