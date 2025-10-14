@@ -8,8 +8,8 @@
 
 # Grupo
 
-- Estudiante 1 (Legajo 1) - cor...@estudiante1.com
-- Estudiante 2 (Legajo 2) - cor...@estudiante2.com
+- Julieta Araceli Palmieri (Legajo 201106) - pal...@gmail.com
+- Roberto Nicolas Gayozo (Legajo 195282) - nic...@gmail.com
 
 # Contexto / Escenario
 
